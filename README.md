@@ -34,6 +34,19 @@ Adiciona um botão flutuante para copiar o conteúdo principal de notícias ou a
   - Copia o conteúdo identificado para a área de transferência ao clicar no botão.
 - **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/copiar-conteudo-noticias.js)**
 
+### 4. [ChatGPT Send Content Page](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/chatgpt-send-content-page.js)
+
+Adiciona um botão flutuante para enviar o conteúdo principal de uma página ou artigo diretamente para o ChatGPT.
+
+- **Versão:** 1.0
+- **Funcionalidades:**
+  - Detecta automaticamente o conteúdo principal de uma página, identificando o maior bloco de texto.
+  - Exclui anúncios, CSS e outros elementos irrelevantes.
+  - Envia o conteúdo juntamente com o URL da página para o ChatGPT com um prompt pré-definido.
+  - Garante que as respostas sejam em **português (PT-BR)**.
+  - Um botão flutuante aparece no canto inferior esquerdo da página para facilitar o acesso.
+- **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/chatgpt-send-content-page.js)**
+
 ---
 
 ## 🛠️ Como Usar

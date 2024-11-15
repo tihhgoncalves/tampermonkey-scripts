@@ -2,7 +2,7 @@
 // @name         ChatGPT Send Content Page
 // @namespace    https://github.com/tihhgoncalves/tampermonkey-scripts
 // @version      1.0
-// @description  Adds a floating button to send the main content of pages or articles directly to ChatGPT.
+// @description  Adiciona um botão flutuante para enviar o conteúdo principal de uma página ou artigo diretamente para o ChatGPT.
 // @author       Tihh Gonçalves
 // @supportURL   https://tihhgoncalves.com.br
 // @updateURL    https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/chatgpt-send-content-page.js
