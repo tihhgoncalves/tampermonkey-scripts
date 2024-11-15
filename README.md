@@ -12,6 +12,16 @@ Permite selecionar qualquer texto em uma página e enviá-lo para uma nova conve
 - **Descrição:** Selecione qualquer texto e envie para uma nova conversa no ChatGPT com somente 1 clique.
 - **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/chatgpt-text-selected.js)**
 
+### 2. [Detect Bootstrap Version and Breakpoints](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/detect-bootstrap-version.js)
+
+Detecta a versão do Bootstrap na página e registra o breakpoint ativo com base no tamanho da janela (resultado é mostrado no console).
+
+- **Versão Atual:** 1.1
+- **Funcionalidades:**
+  - Detecta a versão do Bootstrap (3, 4 ou 5).
+  - Monitora o breakpoint atual em tempo real com base no tamanho da janela.
+- **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/detect-bootstrap-version.js)**
+
 ---
 
 ## 🛠️ Como Usar
