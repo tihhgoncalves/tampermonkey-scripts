@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Detect Bootstrap Version and Breakpoints
 // @namespace    https://github.com/tihhgoncalves/tampermonkey-scripts
-// @version      1.1
+// @version      1.0
 // @description  Detecta a versão do Bootstrap na página e registra o breakpoint ativo com base no tamanho da janela (resultado é mostrado no console).
 // @author       Tihh Gonçalves
 // @supportURL   https://tihhgoncalves.com.br

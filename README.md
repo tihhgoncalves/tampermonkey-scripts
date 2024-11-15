@@ -16,11 +16,23 @@ Permite selecionar qualquer texto em uma página e enviá-lo para uma nova conve
 
 Detecta a versão do Bootstrap na página e registra o breakpoint ativo com base no tamanho da janela (resultado é mostrado no console).
 
-- **Versão Atual:** 1.1
+- **Versão Atual:** 1.0
 - **Funcionalidades:**
   - Detecta a versão do Bootstrap (3, 4 ou 5).
   - Monitora o breakpoint atual em tempo real com base no tamanho da janela.
 - **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/detect-bootstrap-version.js)**
+
+### 3. [Copiar Conteúdo de Notícias](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/copiar-conteudo-noticias.js)
+
+Adiciona um botão flutuante para copiar o conteúdo principal de notícias ou artigos diretamente para a área de transferência.
+
+- **Versão Atual:** 1.0
+- **Funcionalidades:**
+  - Identifica automaticamente o maior bloco de texto relevante da página.
+  - Ignora anúncios, CSS, e outros elementos não textuais.
+  - Funciona em sites de notícias e páginas gerais.
+  - Copia o conteúdo identificado para a área de transferência ao clicar no botão.
+- **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/copiar-conteudo-noticias.js)**
 
 ---
 
