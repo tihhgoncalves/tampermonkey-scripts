@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copiar Conteúdo de Notícias
 // @namespace    https://github.com/tihhgoncalves/tampermonkey-scripts
-// @version      1.0
+// @version      1.3
 // @description  Adiciona um botão flutuante para copiar o conteúdo de notícias ou artigos diretamente para a área de transferência.
 // @author       Tihh Gonçalves
 // @supportURL   https://tihhgoncalves.com.br
@@ -19,31 +19,33 @@
 
   // Função para obter o conteúdo principal da página
   function getMainContent() {
-    // Usar Readability.js, se disponível
-    try {
-      const article = new Readability(document.cloneNode(true)).parse();
-      if (article) return article.textContent.trim();
-    } catch (e) {
-      console.warn("Readability.js não está disponível ou falhou:", e);
-    }
-
-    // Algoritmo alternativo para encontrar o maior bloco de texto
-    const blocks = document.querySelectorAll("article, main, div, section");
+    const elements = document.querySelectorAll(
+      "article, main, p, h1, h2, h3, li"
+    );
     let largestBlock = null;
     let maxTextLength = 0;
 
-    blocks.forEach((block) => {
-      const text = block.innerText.trim();
-      // Ignorar anúncios e elementos pequenos
-      if (
-        text.length > maxTextLength &&
-        !block.className.includes("ad") &&
-        !block.className.includes("promo")
-      ) {
-        largestBlock = block;
-        maxTextLength = text.length;
-      }
-    });
+    Array.from(elements)
+      .filter((block) => {
+        const tagName = block.tagName.toLowerCase();
+        const className = block.className.toLowerCase();
+        const text = block.innerText.trim();
+        // Ignorar blocos pequenos, anúncios e elementos não textuais
+        return (
+          text.length > 50 && // Excluir blocos muito pequenos
+          tagName !== "style" &&
+          tagName !== "script" &&
+          !className.includes("ad") &&
+          !className.includes("promo")
+        );
+      })
+      .forEach((block) => {
+        const text = block.innerText.trim();
+        if (text.length > maxTextLength) {
+          largestBlock = block;
+          maxTextLength = text.length;
+        }
+      });
 
     return largestBlock ? largestBlock.innerText.trim() : "";
   }
