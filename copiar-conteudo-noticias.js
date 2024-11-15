@@ -7,7 +7,7 @@
 // @supportURL   https://tihhgoncalves.com.br
 // @updateURL    https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/copiar-conteudo-noticias.js
 // @downloadURL  https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/copiar-conteudo-noticias.js
-// @icon         https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/assets/favico.png
+// @icon         https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/copiar-conteudo-noticias.png
 // @match        *://*/*
 // @grant        GM_setClipboard
 // ==/UserScript==
