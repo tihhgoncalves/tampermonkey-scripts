@@ -12,6 +12,8 @@ Permite selecionar qualquer texto em uma página e enviá-lo para uma nova conve
 - **Descrição:** Selecione qualquer texto e envie para uma nova conversa no ChatGPT com somente 1 clique.
 - **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/chatgpt-text-selected.js)**
 
+---
+
 ### 2. [Detect Bootstrap Version and Breakpoints](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/detect-bootstrap-version.js)
 
 Detecta a versão do Bootstrap na página e registra o breakpoint ativo com base no tamanho da janela (resultado é mostrado no console).
@@ -21,6 +23,8 @@ Detecta a versão do Bootstrap na página e registra o breakpoint ativo com base
   - Detecta a versão do Bootstrap (3, 4 ou 5).
   - Monitora o breakpoint atual em tempo real com base no tamanho da janela.
 - **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/detect-bootstrap-version.js)**
+
+---
 
 ### 3. [Copiar Conteúdo de Notícias](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/copiar-conteudo-noticias.js)
 
@@ -34,6 +38,8 @@ Adiciona um botão flutuante para copiar o conteúdo principal de notícias ou a
   - Copia o conteúdo identificado para a área de transferência ao clicar no botão.
 - **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/copiar-conteudo-noticias.js)**
 
+---
+
 ### 4. [ChatGPT Send Content Page](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/chatgpt-send-content-page.js)
 
 Adiciona um botão flutuante para enviar o conteúdo principal de uma página ou artigo diretamente para o ChatGPT.
@@ -46,6 +52,19 @@ Adiciona um botão flutuante para enviar o conteúdo principal de uma página ou
   - Garante que as respostas sejam em **português (PT-BR)**.
   - Um botão flutuante aparece no canto inferior esquerdo da página para facilitar o acesso.
 - **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/chatgpt-send-content-page.js)**
+
+---
+
+### 5. [Ocultar Tweets Promovidos](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/ocultar-tweets-promovidos.js)
+
+Oculta automaticamente tweets promovidos no X.com (antigo Twitter) e informa no console quando algum tweet é identificado e escondido.
+
+- **Versão Atual:** 1.2
+- **Funcionalidades:**
+  - Detecta tweets promovidos analisando a presença do texto **"Promovido"** em seus elementos.
+  - Oculta os tweets identificados.
+  - Exibe mensagens no console sempre que um tweet promovido for ocultado.
+- **[Instalar o Script](https://raw.githubusercontent.com/tihhgoncalves/tampermonkey-scripts/main/ocultar-tweets-promovidos.js)**
 
 ---
 
